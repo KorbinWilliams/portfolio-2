@@ -1,0 +1,8 @@
+.background {
+  background-image: url("../images/test.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
