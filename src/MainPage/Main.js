@@ -1,14 +1,27 @@
 import React from 'react';
-import { Grid } from '@mui/material';
+import { Grid, Button } from '@mui/material';
 import MainCSS from './Main.module.css'
 
   function Main() {
 
     return (
       <Grid container className={MainCSS.background}>
-        HELLO
-        {/* <div style={styles.background}></div> */}
-        {/* <img src="https://images.unsplash.com/photo-1618588507085-c79565432917?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" /> */}
+        {/* TODO SEPARATE INTO OTHER COMPONENTS*/}
+        <Grid container alignContent="center" justifyContent="center" className={MainCSS.buttonRow} id="Button-Row">
+          <Grid container justifyContent="center" alignContent="center" item xs={3} className={MainCSS.mainButtonContainer} id="About-Button">
+            <Button type="button" disableRipple={true} className={MainCSS.pageButton}>About</Button>
+          </Grid>
+          <Grid container justifyContent="center" alignContent="center" item xs={3} className={MainCSS.mainButtonContainer} id="Projects-Button">
+            <Button type="button" disableRipple={true} className={MainCSS.pageButton}>Projects</Button>
+          </Grid>
+          <Grid container justifyContent="center" alignContent="center" item xs={3} className={MainCSS.mainButtonContainer} id="Contacts-Button">
+            <Button type="button" disableRipple={true} className={MainCSS.pageButton}>Contacts</Button>
+          </Grid>
+        </Grid>
+        {/* TODO ADD TEXT BASED ON "PAGE", ON CHANGE FADE OUT OLD TEXT AND THEN FADE IN NEW TEXT */}
+        <Grid container alignContent="center" justifyContent="center" className={MainCSS.textDisplay} id="Text-Display">
+
+        </Grid>
       </Grid>
     )
   }
