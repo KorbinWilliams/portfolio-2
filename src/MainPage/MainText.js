@@ -9,17 +9,12 @@ import MainTextCSS from './MainText.module.css'
   const MainText = (props) => {
     const { page } = { ...props }
 
-    if (props.page === 'about') {
+    if (page === 'about') {
       return (
         <About />
       )
     }
-    else if (props.page === 'projects') {
-      return (
-        <Projects />
-      )
-    }
-    else if (props.page === 'contacts') {
+    else if (page === 'contacts') {
       return (
         <Contacts />
       )

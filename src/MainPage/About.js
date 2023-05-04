@@ -5,7 +5,9 @@ import { Grid, Button } from '@mui/material';
   const About = (props) => {
 
     return (
-      <div></div>
+      <div>
+        
+      </div>
     )
   }
 
