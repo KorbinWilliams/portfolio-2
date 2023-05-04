@@ -1,24 +1,29 @@
 import React from 'react';
 import { Grid, Button } from '@mui/material';
-import MainCSS from './Main.module.css'
+import About from './About'
+import Contacts from './Contacts'
+import Projects from './Projects'
+import MainTextCSS from './MainText.module.css'
 
-  function Main(props) {
+  // TODO // Put components into components folder with singular components css module?
+  const MainText = (props) => {
+    const { page } = { ...props }
 
     if (props.page === 'about') {
       return (
-        <div></div>
+        <About />
       )
     }
     else if (props.page === 'projects') {
       return (
-        <div></div>
+        <Projects />
       )
     }
     else if (props.page === 'contacts') {
       return (
-        <div></div>
+        <Contacts />
       )
     }
   }
 
-export default Main
+export default MainText

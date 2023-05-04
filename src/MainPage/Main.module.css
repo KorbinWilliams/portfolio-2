@@ -16,15 +16,17 @@
   /* margin-left: 3%; */
 }
 
+/* NOTE kind of annoying having to label everything here important, but it otherwise seems to be overwritten by MUI's button properties (on restart, was working beforehand). Could use MUI's sx to overwrite with inline, but it's uglier */
 .pageButton {
-  height: fit-content;
-  width: fit-content;
-  font-size: xx-large;
-  font-family: serif;
-  color: rgb(0, 0, 0);
+  height: fit-content !important;
+  width: fit-content !important;
+  font-size: xx-large !important;
+  font-family: serif !important;
+  color: rgb(0, 0, 0) !important;
+  background-color: rgb(255, 255, 255, 0) !important;
 }
 
 .pageButton:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255, 0);
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(255, 255, 255, 0) !important;
 }
