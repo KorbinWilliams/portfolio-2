@@ -4,7 +4,7 @@ import MainText from "./MainText";
 import MainCSS from './Main.module.css'
 
   const Main = () => {
-    const [page, setPage] = useState('about')
+    const [page, setPage] = useState('')
 
     return (
       <Grid container justifyContent="center" alignContent="center" className={MainCSS.background}>

@@ -5,9 +5,17 @@ import { Grid, Button } from '@mui/material';
   const About = (props) => {
 
     return (
-      <div>
-        
-      </div>
+      <Grid container justifyContent="center">
+        <Grid container item xs={6}>
+          {/* TODO // personal picture */}
+        </Grid>
+        <Grid container item xs={6}>
+          {/* TODO // about "pages", i.e. general, career, personal-interests */}
+        </Grid>
+        <Grid container item xs={11}>
+          {/* TODO // displayed info. To scroll or not to scroll? */}
+        </Grid>
+      </Grid>
     )
   }
 

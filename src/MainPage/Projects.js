@@ -5,7 +5,10 @@ import { Grid, Button } from '@mui/material';
   const Projects = (props) => {
 
     return (
-      <div></div>
+      <Grid container>
+        {/* TODO // have images for each project (amazon (should check if it still works), simple-chart (add in project as react component when I have time), the portfolio itself (partially as a gag), and future projects) 
+                 // on hover shows name of project, and clicking shows reasons for project, things learned, and general/technical details*/}
+      </Grid>
     )
   }
 

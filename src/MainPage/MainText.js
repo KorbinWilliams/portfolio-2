@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid, Button } from '@mui/material';
 import About from './About'
-import Contacts from './Contacts'
 import Projects from './Projects'
 import MainTextCSS from './MainText.module.css'
 
@@ -14,10 +13,13 @@ import MainTextCSS from './MainText.module.css'
         <About />
       )
     }
-    else if (page === 'contacts') {
+    else if (page === 'projects') {
       return (
-        <Contacts />
+        <Projects />
       )
+    }
+    else {
+      return <div></div>
     }
   }
 
