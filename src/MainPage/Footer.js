@@ -9,8 +9,12 @@ const Footer = (props) => {
     <Grid container justifyContent="center" alignContent="center" className={FooterCSS.footerContainer}>
       <Grid container item className={FooterCSS.footerTop}></Grid>
       <Grid container item justifyContent="center" alignContent="center" className={FooterCSS.footerBottom}>
-        <Button>LinkedIn</Button>
-        <Button>Email</Button>
+        <Grid container justifyContent="center" alignContent="center" item xs={2} className={FooterCSS.buttonContainer}>
+          <Button className={FooterCSS.linkedInBtn}></Button>
+        </Grid>
+        <Grid container justifyContent="center" alignContent="center" item xs={2} className={FooterCSS.buttonContainer}>
+          <Button className={FooterCSS.emailBtn}></Button>
+        </Grid>
       </Grid>
     </Grid>
   )

@@ -11,3 +11,21 @@
   height: 50%;
   background-color: white;
 }
+
+.buttonContainer {
+  height: 100%
+}
+
+.linkedInBtn {
+  background-image: url("../images/LinkedInLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 75%;
+}
+
+.emailBtn {
+  background-image: url("../images/gmailLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 75%;
+}
