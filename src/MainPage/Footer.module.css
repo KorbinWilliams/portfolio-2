@@ -1,0 +1,13 @@
+.footerContainer {
+  height: 100%;
+}
+
+.footerTop {
+  height: 50%;
+  background-color: rgb(255, 255, 255, 0)
+}
+
+.footerBottom {
+  height: 50%;
+  background-color: white;
+}

@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { Grid, Button } from '@mui/material';
-import MainText from "./MainText";
+import React, { useState } from 'react'
+import { Grid, Button } from '@mui/material'
+import MainText from './MainText'
 import MainCSS from './Main.module.css'
+import Footer from './Footer'
 
   const Main = () => {
     const [page, setPage] = useState('')
@@ -22,7 +23,7 @@ import MainCSS from './Main.module.css'
           <MainText page={page} id="Main-Text" />
         </Grid>
         <Grid container justifyContent="center" alignContent="center" className={MainCSS.footer}>
-          {/* TODO // add contacts. Buttons with some animation on hover */}
+          <Footer />
         </Grid>
       </Grid>
     )
