@@ -18,9 +18,9 @@
 
 .linkedInBtn {
   background-image: url("../images/LinkedInLogo.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 75%;
+  height: 100%;
 }
 
 .emailBtn {

@@ -10,10 +10,14 @@ const Footer = (props) => {
       <Grid container item className={FooterCSS.footerTop}></Grid>
       <Grid container item justifyContent="center" alignContent="center" className={FooterCSS.footerBottom}>
         <Grid container justifyContent="center" alignContent="center" item xs={2} className={FooterCSS.buttonContainer}>
-          <Button className={FooterCSS.linkedInBtn}></Button>
+          {/* TODO // links to my linkedIn profile */}
+          <a href="https://www.linkedin.com/in/korbin-williams-7b433a199/" style={{height: '75%'}}>
+            <Button className={FooterCSS.linkedInBtn}></Button>
+          </a>
         </Grid>
         <Grid container justifyContent="center" alignContent="center" item xs={2} className={FooterCSS.buttonContainer}>
-          <Button className={FooterCSS.emailBtn}></Button>
+          {/* TODO // copies email address to clipboard on click (with message stating "copied to clipboard") */}
+          <Button className={FooterCSS.emailBtn} onClick={() => {navigator.clipboard.writeText('1korbin.williams@gmail.com')}}></Button>
         </Grid>
       </Grid>
     </Grid>
