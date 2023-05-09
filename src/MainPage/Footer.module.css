@@ -9,25 +9,38 @@
 
 .footerBottom {
   height: 50%;
-  background-color: white;
+  background-color: rgb(52, 52, 52);
 }
 
 .buttonContainer {
-  height: 100%
-}
-
-.linkedInBtn {
-  background-image: url("../images/LinkedInLogo.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100%;
 }
 
-.emailBtn {
-  background-image: url("../images/gmailLogo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+.linkedInLink {
   height: 75%;
+  width: 25%;
+}
+
+.linkedInBtn {
+  /* background-image: url("../images/LinkedInLogo.png"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  height: 100%;
+  width: 100%;
+}
+
+.emailBtn {
+  /* background-image: url("../images/gmailLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  height: 75%;
+  width: 25%
+}
+
+.btnImage {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .clipMsgActive {

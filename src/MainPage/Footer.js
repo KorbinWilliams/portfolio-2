@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import { Grid, Button } from '@mui/material'
 import FooterCSS from './Footer.module.css'
+import linkedInLogo from '../images/LinkedInLogo.png'
+import gmailLogo from '../images/gmailLogo.png'
 
 // NOTE // copies email address to clipboard, enables message stating so to appear, and then hides message after 2 seconds
 const copyEmail = (setClipMsg) => {
@@ -24,15 +26,19 @@ const Footer = (props) => {
         </Grid>
       </Grid>
       <Grid container item justifyContent="center" alignContent="center" className={FooterCSS.footerBottom}>
-        <Grid container justifyContent="center" alignContent="center" item xs={2} className={FooterCSS.buttonContainer}>
+        <Grid container justifyContent="center" alignContent="center" item md={3} lg={2} className={FooterCSS.buttonContainer}>
           {/* TODO // links to my linkedIn profile */}
-          <a href="https://www.linkedin.com/in/korbin-williams-7b433a199/" style={{height: '75%'}}>
-            <Button className={FooterCSS.linkedInBtn}></Button>
+          <a href="https://www.linkedin.com/in/korbin-williams-7b433a199/" className={FooterCSS.linkedInLink}>
+            <Button className={FooterCSS.linkedInBtn}>
+              <img src={linkedInLogo} className={FooterCSS.btnImage} />
+            </Button>
           </a>
         </Grid>
-        <Grid container justifyContent="center" alignContent="center" item xs={2} className={FooterCSS.buttonContainer}>
+        <Grid container justifyContent="center" alignContent="center" item md={3} lg={2} className={FooterCSS.buttonContainer}>
           {/* TODO // copies email address to clipboard on click (with message stating "copied to clipboard") */}
-          <Button className={FooterCSS.emailBtn} onClick={() => {copyEmail(setClipMsg)}}></Button>
+          <Button className={FooterCSS.emailBtn} onClick={() => {copyEmail(setClipMsg)}}>
+            <img src={gmailLogo} className={FooterCSS.btnImage} />
+          </Button>
         </Grid>
       </Grid>
     </Grid>
