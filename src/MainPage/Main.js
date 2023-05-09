@@ -19,7 +19,7 @@ import Footer from './Footer'
           </Grid>
         </Grid>
         {/* TODO // ADD TEXT BASED ON "PAGE", ON CHANGE FADE OUT OLD TEXT AND THEN FADE IN NEW TEXT */}
-        <Grid container justifyContent="center" alignContent="center" xs={10} className={MainCSS.textContainer}>
+        <Grid container justifyContent="center" alignContent="center" item xs={10} className={MainCSS.textContainer}>
           <MainText page={page} id="Main-Text" />
         </Grid>
         <Grid container justifyContent="center" alignContent="center" className={MainCSS.footer}>
